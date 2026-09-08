@@ -1,7 +1,7 @@
 {
-    "version": "3.7.0",
+    "version": "3.8.0",
     "description": "Git extension for versioning large files.",
-    "homepage": "https://git-lfs.github.com/",
+    "homepage": "https://git-lfs.com",
     "license": "MIT",
     "suggest": {
         "Git": [
@@ -11,15 +11,15 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.0/git-lfs-windows-amd64-v3.7.0.zip",
-            "hash": "10be221ee5a76c6f4fc4d5b0c84d9b6f97b0db4815fb39a1b9579f04d37379ec"
+            "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-amd64-v3.8.0.zip",
+            "hash": "b62e7b8ceddee635f691233d77de8eaa4b213e9209e0173811d8cfa77f7882c1"
         },
         "32bit": {
-            "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.0/git-lfs-windows-386-v3.7.0.zip",
-            "hash": "ea8c5fe2125650fbe6e00b27d139511965b77c2f5f017cb1345b67804de00803"
+            "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-386-v3.8.0.zip",
+            "hash": "657337f2ee95c2f2e5e431eb7cf9de3481346f11d708ce116c8a96a622288386"
         }
     },
-    "extract_dir": "git-lfs-3.7.0",
+    "extract_dir": "git-lfs-3.8.0",
     "bin": "git-lfs.exe",
     "checkver": {
         "github": "https://github.com/git-lfs/git-lfs"

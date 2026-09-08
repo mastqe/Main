@@ -1,20 +1,20 @@
 {
-    "version": "3.1.2",
+    "version": "3.2.0",
     "description": "A JPEG image codec that uses SIMD instructions",
     "homepage": "https://libjpeg-turbo.org/",
     "license": "IJG,BSD-3-Clause,Zlib",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.2/libjpeg-turbo-3.1.2-vc-x64.exe#/dl.7z",
-            "hash": "36ebf787adf093b12efe43d4a25f988863fb64d49f69008cba3dbcb4a3d78e6d"
+            "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.2.0/libjpeg-turbo-3.2.0-vc-x64.exe#/dl.7z",
+            "hash": "662761d8ba8dae04aec74023ebaeceb856c2b56b9b59cfd180759d26300dda42"
         },
         "arm64": {
-            "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.2/libjpeg-turbo-3.1.2-vc-arm64.exe#dl.7z",
-            "hash": "7e890640b1cc7bdaf9d91402465bc618044182e004043f1d159726a315632313"
+            "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.2.0/libjpeg-turbo-3.2.0-vc-arm64.exe#dl.7z",
+            "hash": "269fc323bfcf6e1ad45138af808f7bd912447e9282db54635c72f6a889075bba"
         },
         "32bit": {
-            "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.2/libjpeg-turbo-3.1.2-vc-x86.exe#/dl.7z",
-            "hash": "600b3eeeeb458ab2705bdc1924e688320006ebafaae5bdafe6e017ae9aec042b"
+            "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.2.0/libjpeg-turbo-3.2.0-vc-x86.exe#/dl.7z",
+            "hash": "86806741d743dbd53a889ff721f2274cd34bc41b4dd40500902df8d99332153e"
         }
     },
     "pre_install": "'PLUGINS', 'SYS' | ForEach-Object { Remove-Item -Recurse \"$dir/`$$_`DIR\" }",

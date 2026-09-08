@@ -1,18 +1,18 @@
 {
-    "version": "13.36",
+    "version": "13.59",
     "description": "A command-line application for reading, writing and editing meta information in a wide variety of files.",
     "homepage": "https://exiftool.org",
     "license": "GPL-1.0-or-later|Artistic-1.0-Perl",
     "architecture": {
         "64bit": {
-            "url": "https://exiftool.org/exiftool-13.36_64.zip",
-            "hash": "6e2ba32f10883aec180f71cf257fd8ac7d4a9d12f7c23e0a965f6f4b7fa7d0e9",
-            "extract_dir": "exiftool-13.36_64"
+            "url": "https://download.sourceforge.net/project/exiftool/files/exiftool-13.59_64.zip",
+            "hash": "44b512b25af500724ba579d0a53c8fc5851628b692dd5e5d94ae4a15c2cba9ec",
+            "extract_dir": "exiftool-13.59_64"
         },
         "32bit": {
-            "url": "https://exiftool.org/exiftool-13.36_32.zip",
-            "hash": "5dadcd268911b1c46274a18bcdf19d3962e36477d7779236a3f75bfe968df433",
-            "extract_dir": "exiftool-13.36_32"
+            "url": "https://download.sourceforge.net/project/exiftool/files/exiftool-13.59_32.zip",
+            "hash": "fe9a55d28b05c1b0e18877b4881f40d83db222f90018963473cff798e8bf05af",
+            "extract_dir": "exiftool-13.59_32"
         }
     },
     "pre_install": "Copy-Item \"$dir\\exiftool(-k).exe\" \"$dir\\exiftool.exe\"",
@@ -27,16 +27,16 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://exiftool.org/exiftool-$version_64.zip",
+                "url": "https://download.sourceforge.net/project/exiftool/files/exiftool-$version_64.zip",
                 "extract_dir": "exiftool-$version_64"
             },
             "32bit": {
-                "url": "https://exiftool.org/exiftool-$version_32.zip",
+                "url": "https://download.sourceforge.net/project/exiftool/files/exiftool-$version_32.zip",
                 "extract_dir": "exiftool-$version_32"
             }
         },
         "hash": {
-            "url": "$baseurl/checksums.txt",
+            "url": "https://exiftool.org/checksums-$version.txt",
             "regex": "$basename.*?$sha256"
         }
     }

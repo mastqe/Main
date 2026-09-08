@@ -1,21 +1,21 @@
 {
-    "version": "2.2.4",
+    "version": "2.5.12",
     "description": "Formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.",
     "homepage": "https://biomejs.dev/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/biomejs/biome/releases/download/%40biomejs%2Fbiome%402.2.4/biome-win32-x64.exe#/biome.exe",
-            "hash": "7eaa28a3782192b7c443fc50ead097a56e4edbc669b5963f2c2cab3eaabbd94e"
+            "url": "https://github.com/biomejs/biome/releases/download/%40biomejs%2Fbiome%402.5.12/biome-win32-x64.exe#/biome.exe",
+            "hash": "59f88d04ab25f8634639c337ef70a79927504b6379a1ec3ff4e87f7c15dd5dce"
         },
         "arm64": {
-            "url": "https://github.com/biomejs/biome/releases/download/%40biomejs%2Fbiome%402.2.4/biome-win32-arm64.exe#/biome.exe",
-            "hash": "85d834055d8429728513023cfb63f327b5e5eeceebe59befd4f7c736d8af5924"
+            "url": "https://github.com/biomejs/biome/releases/download/%40biomejs%2Fbiome%402.5.12/biome-win32-arm64.exe#/biome.exe",
+            "hash": "e0148babfa207b79bc9ed50c22479722e314ae07e989c9bdae9611cd3c6511bf"
         }
     },
     "bin": "biome.exe",
     "checkver": {
-        "url": "https://api.github.com/repos/biomejs/biome/releases",
+        "github": "https://api.github.com/repos/biomejs/biome/releases",
         "jsonpath": "$..tag_name",
         "regex": "@biomejs/biome@([\\d.]+)\""
     },

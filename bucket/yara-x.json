@@ -1,5 +1,5 @@
 {
-    "version": "1.6.0",
+    "version": "1.20.0",
     "description": "A malware samples pattern matching tool, re-incarnation of YARA.",
     "homepage": "https://virustotal.github.io/yara-x/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/VirusTotal/yara-x/releases/download/v1.6.0/yara-x-v1.6.0-x86_64-pc-windows-msvc.zip",
-            "hash": "74355fc9711f409b7fd6b399ef97bd23cbfbe472c7a14f4b0e3a9def133b3e04"
+            "url": "https://github.com/VirusTotal/yara-x/releases/download/v1.20.0/yara-x-v1.20.0-x86_64-pc-windows-msvc.zip",
+            "hash": "b1e2840bac593aea353d2b2b341f5a862c9d61c0c406d9abbbad9e1fa35163a1"
         }
     },
     "bin": "yr.exe",

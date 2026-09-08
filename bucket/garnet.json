@@ -1,5 +1,5 @@
 {
-    "version": "1.0.83",
+    "version": "2.1.5",
     "description": "A high-performance cache-store from Microsoft Research.",
     "homepage": "https://microsoft.github.io/garnet",
     "license": "MIT",
@@ -17,15 +17,15 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microsoft/garnet/releases/download/v1.0.83/win-x64-based-readytorun.zip",
-            "hash": "59d4ac9d6c8c1b0ae636a5f92c035050242328529fe8d07fd9ff11b709024725"
+            "url": "https://github.com/microsoft/garnet/releases/download/v2.1.5/win-x64-based-readytorun.zip",
+            "hash": "7d1d40254ef11dbb12bf59c07b6543a04f2b51049f515cfc9745f556f96c7466"
         },
         "arm64": {
-            "url": "https://github.com/microsoft/garnet/releases/download/v1.0.83/win-arm64-based-readytorun.zip",
-            "hash": "e5877da89f01b6b61ee0b935ff9fab89db91ed02dd1695334705aa6345d8a535"
+            "url": "https://github.com/microsoft/garnet/releases/download/v2.1.5/win-arm64-based-readytorun.zip",
+            "hash": "becd2273bca2c3b4094f1be66a08aac29d46f0fff9d265087a1ec54acfd7c7a9"
         }
     },
-    "extract_dir": "net9.0",
+    "extract_dir": "net10.0",
     "post_install": "Remove-Item -Path \"$dir\\Service\" -Recurse -Force -ErrorAction SilentlyContinue",
     "bin": "GarnetServer.exe",
     "persist": [

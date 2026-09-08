@@ -1,5 +1,5 @@
 {
-    "version": "6.1.3",
+    "version": "6.3.3",
     "description": "A general-purpose programming language built using a modern approach to safety, performance, and software design patterns.",
     "homepage": "https://www.swift.org/",
     "license": "Apache-2.0",
@@ -16,12 +16,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.swift.org/swift-6.1.3-release/windows10/swift-6.1.3-RELEASE/swift-6.1.3-RELEASE-windows10.exe",
-            "hash": "e298fb5eed208e94e02c365772b31976462439446a9c9cd6499309b8ba50d999"
+            "url": "https://download.swift.org/swift-6.3.3-release/windows10/swift-6.3.3-RELEASE/swift-6.3.3-RELEASE-windows10.exe",
+            "hash": "235626548f249cd516d3d4d90eee980dccad46f3822dac1f8e3119b0fede94b7"
         },
         "arm64": {
-            "url": "https://download.swift.org/swift-6.1.3-release/windows10-arm64/swift-6.1.3-RELEASE/swift-6.1.3-RELEASE-windows10-arm64.exe",
-            "hash": "bbc114129fd282d33ad36747ee3b8b11452bd98421eab72612e42a2cb90b93a9"
+            "url": "https://download.swift.org/swift-6.3.3-release/windows10-arm64/swift-6.3.3-RELEASE/swift-6.3.3-RELEASE-windows10-arm64.exe",
+            "hash": "09e39c60f0b05d00fbe5f55b2d344752ccbc86e64802a2d896c0d55bc51e243d"
         }
     },
     "pre_install": [
@@ -39,9 +39,9 @@
         "Move-Item -Path \"$dir\\Swift\\Platforms\\$ver\\Windows.platform\" -Destination \"$dir\\Swift\\Platforms\"",
         "Move-Item -Path \"$dir\\Swift\\Toolchains\\$($ver)+Asserts\\usr\" -Destination \"$dir\\Swift\\Toolchains\"",
         "# Move-Item -Path \"$dir\\Swift\\Tools\\$ver\\*\" -Destination \"$dir\\Swift\\Tools\"",
-        "Remove-Item \"$dir\\Swift\\Platforms\\$ver\" | Out-Null",
-        "Remove-Item \"$dir\\Swift\\Toolchains\\$ver+Asserts\" | Out-Null",
-        "# Remove-Item \"$dir\\Swift\\Tools\\$ver\" | Out-Null",
+        "Remove-Item \"$dir\\Swift\\Platforms\\$ver\" -Recurse | Out-Null",
+        "Remove-Item \"$dir\\Swift\\Toolchains\\$ver+Asserts\" -Recurse | Out-Null",
+        "# Remove-Item \"$dir\\Swift\\Tools\\$ver\" -Recurse | Out-Null",
         "Move-Item -Path \"$dir\\Swift\\*\" -Destination \"$dir\"",
         "Remove-Item \"$dir\\Swift\", \"$dir\\extract_folder\" -Recurse | Out-Null"
     ],
@@ -53,8 +53,8 @@
         "SDKROOT": "$dir\\Platforms\\Windows.platform\\Developer\\SDKs\\Windows.sdk"
     },
     "checkver": {
-        "url": "https://github.com/apple/swift",
-        "regex": "/swift-([\\d.]+)-RELEASE"
+        "github": "https://github.com/swiftlang/swift",
+        "regex": "swift-([\\d.]+)-RELEASE"
     },
     "autoupdate": {
         "architecture": {

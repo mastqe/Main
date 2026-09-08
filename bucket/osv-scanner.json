@@ -1,12 +1,12 @@
 {
-    "version": "2.2.2",
+    "version": "2.5.1",
     "description": "Find existing vulnerabilities affecting your project's dependencies.",
     "homepage": "https://github.com/google/osv-scanner",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/google/osv-scanner/releases/download/v2.2.2/osv-scanner_windows_amd64.exe#/osv-scanner.exe",
-            "hash": "5cce6a9b96b88d0620bfdb22da72497c444948e56c64d3508f054cded13fb49f"
+            "url": "https://github.com/google/osv-scanner/releases/download/v2.5.1/osv-scanner_windows_amd64.exe#/osv-scanner.exe",
+            "hash": "25e42f5ef6711fd8c0fb45390972205891dd44c6bd02ac93f0f63e8e98d9bfb6"
         }
     },
     "bin": "osv-scanner.exe",

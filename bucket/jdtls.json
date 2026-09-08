@@ -1,5 +1,5 @@
 {
-    "version": "1.51.0-202509121646",
+    "version": "1.62.0-202609042126",
     "description": "Java language server",
     "homepage": "https://projects.eclipse.org/projects/eclipse.jdt.ls",
     "license": "EPL-2.0",
@@ -7,13 +7,16 @@
         "JDK": "java/openjdk",
         "Python": "python"
     },
-    "url": "https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.51.0-202509121646.tar.gz",
-    "hash": "526dc99837c1800ac3cf42a6e4b64606c4cc662b1f1c738119d6b4bd3fd81003",
+    "url": "https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.62.0-202609042126.tar.gz",
+    "hash": "3601dcfbc49e393f4edf5c186165227ce2dfa4762b81a880aabcbbbaa61a83a3",
     "installer": {
         "script": "shim (Get-Command 'python.exe').Source $global jdtls \"$dir\\bin\\jdtls\""
     },
     "uninstaller": {
-        "script": "rm_shim jdtls (shimdir $global) jdtls"
+        "script": [
+            "$global = installed $app $true",
+            "rm_shim jdtls (shimdir $global) jdtls"
+        ]
     },
     "checkver": {
         "url": "https://download.eclipse.org/jdtls/snapshots/latest.txt",

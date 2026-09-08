@@ -1,12 +1,16 @@
 {
-    "version": "3.0.40",
+    "version": "4.0.13",
     "description": "Scans K8s clusters, YAML files, and HELM charts, and detect misconfigurations and software vulnerabilities at early stages of the CI/CD pipeline and provides a risk score instantly and risk trends over time.",
-    "homepage": "https://github.com/kubescape/kubescape/",
+    "homepage": "https://github.com/kubescape/kubescape",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kubescape/kubescape/releases/download/v3.0.40/kubescape.exe",
-            "hash": "bf1a9dfe958d720d0c741abe491c5ceaab3b0b492c24c65d9aba7f73ba86ba95"
+            "url": "https://github.com/kubescape/kubescape/releases/download/v4.0.13/kubescape_4.0.13_windows_amd64.exe#/kubescape.exe",
+            "hash": "ede84135a2537eaf2a471f1d2c9fc870b6eea3b1f694a719524684291c12181b"
+        },
+        "arm64": {
+            "url": "https://github.com/kubescape/kubescape/releases/download/v4.0.13/kubescape_4.0.13_windows_arm64.exe#/kubescape.exe",
+            "hash": "22b88ec08b3b0c95472ad9b5d27db62b0acb4800b35b3b758f1e6e597bea2578"
         }
     },
     "bin": "kubescape.exe",
@@ -14,8 +18,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/kubescape/kubescape/releases/download/v$version/kubescape.exe"
+                "url": "https://github.com/kubescape/kubescape/releases/download/v$version/kubescape_$version_windows_amd64.exe#/kubescape.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/kubescape/kubescape/releases/download/v$version/kubescape_$version_windows_arm64.exe#/kubescape.exe"
             }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.sha256"
         }
     }
 }

@@ -1,5 +1,5 @@
 {
-    "version": "7.98",
+    "version": "7.991",
     "description": "Network exploration and security auditing utility.",
     "homepage": "https://nmap.org",
     "license": {
@@ -16,8 +16,8 @@
     "suggest": {
         "vcredist": "extras/vcredist2008"
     },
-    "url": "https://nmap.org/dist/nmap-7.98-setup.exe#/dl.7z",
-    "hash": "5a52826b45600c34662012cc70f35df8dde590b83c14d0f3c7be04bbb4087d32",
+    "url": "https://nmap.org/dist/nmap-7.991-setup.exe#/dl.7z",
+    "hash": "93bfd37bdb31a7adfd932beb5dbce06025da691d01a0939e806ea704f7367657",
     "pre_install": [
         "Get-ChildItem \"$dir\\`$PLUGINSDIR\\npcap-*.exe\" | Select-Object -First 1 | Rename-Item -NewName 'npcap.exe'",
         "Move-Item \"$dir\\`$PLUGINSDIR\\npcap.exe\" \"$dir\"",

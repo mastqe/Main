@@ -1,16 +1,16 @@
 {
-    "version": "0.32.3",
+    "version": "0.36.5",
     "description": "Golang implementation of Swagger 2.0 (OpenAPI 2.0)",
     "homepage": "https://goswagger.io",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/go-swagger/go-swagger/releases/download/v0.32.3/swagger_windows_amd64.exe#/swagger.exe",
-            "hash": "f922e6ee7e477850bc42e3da145d00fbe25800a099a804955abff113f67020df"
+            "url": "https://github.com/go-swagger/go-swagger/releases/download/v0.36.5/swagger_windows_amd64.exe#/swagger.exe",
+            "hash": "35c8c09a943e5d9ac3596346d3facd38806959801ef737918d9a1c7b460f3b94"
         },
         "arm64": {
-            "url": "https://github.com/go-swagger/go-swagger/releases/download/v0.32.3/swagger_windows_arm64.exe#/swagger.exe",
-            "hash": "97fd4943150d727f7ba2f35231d6420353ee663486575d17ca24cf83d4c0a8db"
+            "url": "https://github.com/go-swagger/go-swagger/releases/download/v0.36.5/swagger_windows_arm64.exe#/swagger.exe",
+            "hash": "d2721cfa379a87403b689df9ffb20e9426917ea5686855bace7594a75e5d4daa"
         }
     },
     "bin": "swagger.exe",
